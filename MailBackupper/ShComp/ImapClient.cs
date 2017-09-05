@@ -66,7 +66,7 @@ namespace ShComp.Net.Mail
 
         public Task SelectBox(string name)
         {
-            return SendCommand("SELECT " + name);
+            return SendCommand("SELECT \"" + name + "\"");
         }
 
         private Regex _searchAllRegex = new Regex(@"(\d+)");
